@@ -1,0 +1,170 @@
+@font-face {
+    src: url("../css/njood.otf");
+    font-family: 'njood';
+}
+body {
+    background-image: url('../images/bg.jpg') ;
+    font-family:njood;
+}
+.container-white{
+    background-color:white;
+}
+
+#nav-index{
+    margin-top:1%;
+    text-align: center;
+}
+.navbar-default .navbar-nav>li>a{
+    color: black;
+    float: none;
+}
+.navbar-nav {
+    float: right;
+}
+.navbar-bottom{
+    background-color: rgba(113, 120, 124, 0.48);
+    color: whitesmoke;
+}
+.social{
+    margin-top:70px;
+}
+
+.social > li {
+    background: #B5B5B5;
+    float: right;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    margin: 5px;
+    list-style: none;
+    /* padding: 0px; */
+    line-height: 34px;
+    border: 2px solid #B5B5B5;
+    text-align: center;
+
+}
+.social > li:hover {
+   transform: scale(1.15) rotate(350deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+    background: #2d3f51;
+    border: 2px solid #2c3e50;
+}
+.social li a {
+    margin: 0 0 0 9px;
+    color: #EDEFF1 !important;
+    font-size: 19px;
+}
+
+
+/* carousel */
+#quote-carousel
+{
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+    left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+    right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+    background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+    background: #333333;
+}
+#quote-carousel img
+{
+    width: 250px;
+    height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #quote-carousel
+    {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+
+
+
+
